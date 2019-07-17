@@ -25,11 +25,23 @@ function IamgeContainer () {
 
     return (
         <div>
-            <button
-                onClick={ () => setDateInfo('2019-07-07')}>2019-07-07</button>
-            <button
-                onClick={ () => setDateInfo('2019-07-06')}>2019-07-09</button><br/>
-            <img src={images} alt="NASA APOD"/>
+            <div className="btn-container">
+                <button
+                    onClick={ () => setDateInfo('2019-07-11')}>2019-07-11</button>
+                <button
+                    onClick={ () => setDateInfo('2019-07-07')}>2019-07-07</button>
+                <button
+                    onClick={ () => setDateInfo('2019-07-06')}>2019-07-06</button>
+                <button
+                    onClick={ () => setDateInfo('2019-07-05')}>2019-07-05</button>
+                <button
+                    onClick={ () => setDateInfo('2019-07-04')}>2019-07-04</button>
+                <button
+                    onClick={ () => setDateInfo('2019-07-02')}>2019-07-02</button>
+                <button
+                    onClick={ () => setDateInfo('2019-07-01')}>2019-07-01</button>
+            </div>
+            <img className="apod" src={images} alt="NASA APOD"/>
             <ImgInfo dateInfo={dateInfo} imgTitle={imgTitle} imgExplanation={imgExplanation}/>
         </div>
     )
