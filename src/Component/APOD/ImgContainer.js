@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios"; 
 
+import { Container, Divider } from "semantic-ui-react";
+import { Button, Title } from "./StyleWidgets.js";
 import ImgInfo from "./ImgInfo.js";
+
 
 function IamgeContainer () {
     const [images, setImages] = useState('');
@@ -26,6 +29,19 @@ function IamgeContainer () {
     return (
         <div>
             <div className="btn-container">
+                <Container textAlign='left'>
+                    <Title>Button from styled-component</Title>
+                    <Button onClick={ () => setDateInfo('2019-07-11')}>2019-07-11</Button>
+                    <Button onClick={ () => setDateInfo('2019-07-07')}>2019-07-07</Button>
+                    <Button onClick={ () => setDateInfo('2019-07-06')}>2019-07-06</Button>
+                    <Button onClick={ () => setDateInfo('2019-07-05')}>2019-07-05</Button>
+                    <Button onClick={ () => setDateInfo('2019-07-04')}>2019-07-04</Button>
+                    <Button onClick={ () => setDateInfo('2019-07-02')}>2019-07-02</Button>
+                    <Button onClick={ () => setDateInfo('2019-07-01')}>2019-07-01</Button>
+                    <Divider /> 
+                </Container>
+                
+                                   
                 <button
                     onClick={ () => setDateInfo('2019-07-11')}>2019-07-11</button>
                 <button
